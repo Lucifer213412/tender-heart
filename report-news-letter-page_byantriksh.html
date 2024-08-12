@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report news Letter page</title>
+
+     <!-- Favicons -->
+  <link href="assets/img/tender-heart.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+
+</head>
+
+<header>
+    <header id="header" class="fixed-top header-scrolled">
+        <div class="d-flex align-items-center justify-content-between" style="width: 100%;">
+            <div class="logo d-flex align-items-center">
+                <img src="./assets/img/tender-heart.png " alt="Tender Heart Logo" style="margin-left: 20px;">
+                <h1 class="logo me-auto me-lg-0"><a href="index.html">Tender Heart<span>.</span></a></h1>
+            </div>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+                    <li class="dropdown"><a class="nav-link scrollto" href="#about">About<i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                          <li><a class="nav-link" href="ourstory.html">Our Story</a></li>
+                          <li><a class="nav-link scrollto" href="whatwedo_byantriskh.html">What we do</a></li>
+                          <li><a class="nav-link scrollto" href="#">Reports and Newsletters</a></li>
+                        </ul>
+                    </li><li class="dropdown"><a href="#services"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="rural.html">Rural Children Education</a></li>
+                            <li><a href="women.html">Women Empowerment</a></li>
+                            <li><a href="specialneeds.html">Special Needs Education Programme</a></li>
+                            <li><a href="teaching.html">Teaching Underprivileged Children</a></li>
+                            <li><a href="#">Health Project</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+                    <li class="dropdown"><a href="#"><span>Get Involved</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Volunteer or Intern</a></li>
+                            <li><a href="#">Sponsor a project</a></li>
+                            <li><a href="#">Donate</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            <!-- <a href="#about" class="get-started-btn scrollto">Donate</a> -->
+            <button id="rzp-button1" style="background-color: transparent; border: 0px;">
+              <a class="get-started-btn fas fa-donate">Donate</a>
+            </button>
+            <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+            <script>
+              var options = {
+                key: "rzp_test_aIfnpuWEudWnID", // Enter the Key ID generated from the Dashboard
+                amount: "5000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                currency: "INR",
+                name: "Tender Heart",
+                description: "Please lend a Helping hand",
+                handler: function (response) {
+                  if (
+                    typeof response.razorpay_payment_id == "undefined" ||
+                    response.razorpay_payment_id < 1
+                  ) {
+                    swal({
+                      title: "Please try again later!",
+                      icon: "error",
+                      button: "Close",
+                    });
+                  } else {
+                    swal({
+                      title: "Thank You!",
+                      icon: "success",
+                      button: "Close",
+                    });
+                  }
+                },
+                theme: {
+                  color: "#3399cc",
+                },
+              };
+              var rzp1 = new Razorpay(options);
+              document.getElementById("rzp-button1").onclick = function (
+                e
+              ) {
+                rzp1.open();
+                e.preventDefault();
+              };
+            </script>
+        </div>
+    </header>
+</header>
+<body>
+
+     <!--first left align hero-->
+
+ <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./assets/img/homebackground6.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
+        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</body>
+ <!-- ======= Footer  -->
+ <footer id="footer" style="padding-bottom: 0px !important;">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Tender Heart<span>.</span></h3>
+              <p>
+                Village Bhatola, Tigaon Road<br>
+                Faridabad - 121008<br>
+                Haryana, India <br><br>
+                <strong>Phone:</strong> +91-9350844393<br>
+                <strong>Phone:</strong> +91-9718516337<br>
+                <strong>Email:</strong> info@tenderheartngo.org<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/tenderheartNGO" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/tenderheart_ngo/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/user/tenderheartngo" target="_blank" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="https://in.linkedin.com/in/tender-heart-ngo-17a893187" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right scrollto"></i> <a href="index.html#home">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="gallery.html">Gallery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ourstory.html">Our story</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="donate.html">Donate</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our projects</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="rural.html">Rural Children Education</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="women.html">Women Empowerment</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="specialneeds.html">Special Needs Education Programme</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="teaching.html">Teaching Underprivileged Children</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Health Project</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter.</p>
+            <form action="" method="post" name="newsletter" netlify>
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+<!-- ======= -->
+  </footer><!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</html>

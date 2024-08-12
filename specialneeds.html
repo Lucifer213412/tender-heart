@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Special Needs Education Programme - Tender Heart</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/tender-heart.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/specialneeds.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="d-flex align-items-center justify-content-between" style="width: 100%;">
+          <div class="logo d-flex align-items-center">
+              <img src="/assets/img/tender-heart.png" alt="Tender Heart Logo" style="margin-left: 20px;">
+              <h1 class="logo me-auto me-lg-0"><a href="index.html">Tender Heart<span>.</span></a></h1>
+          </div>
+          <nav id="navbar" class="navbar order-last order-lg-0">
+              <ul>
+                  <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+                  <li class="dropdown"><a class="nav-link scrollto" href="#about">About<i class="bi bi-chevron-down"></i></a>
+                      <ul>
+                        <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+                        <li><a class="nav-link" href="ourstory.html">Our Story</a></li>
+                        <li><a class="nav-link scrollto" href="#">What we do</a></li>
+                        <li><a class="nav-link scrollto" href="#">Reports and Newsletters</a></li>
+                      </ul>
+                  <li class="dropdown"><a href="index.html#services"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
+                      <ul>
+                          <li><a href="rural.html">Rural Children Education</a></li>
+                          <li><a href="women.html">Women Empowerment</a></li>
+                          <li><a href="specialneeds.html">Special Needs Education Programme</a></li>
+                          <li><a href="teaching.html">Teaching Underprivileged Children</a></li>
+                          <li><a href="#">Health Project</a></li>
+                      </ul>
+                  </li>
+                  <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+                  <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+                  <li class="dropdown"><a href="#"><span>Get Involved</span> <i class="bi bi-chevron-down"></i></a>
+                      <ul>
+                          <li><a href="#">Volunteer or Intern</a></li>
+                          <li><a href="#">Sponsor a project</a></li>
+                          <li><a href="#">Donate</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                      </ul>
+                  </li>
+                  <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+          <!-- <a href="#about" class="get-started-btn scrollto">Donate</a> -->
+          <button id="rzp-button1" style="background-color: transparent; border: 0px;">
+            <a class="get-started-btn fas fa-donate">Donate</a>
+          </button>
+          <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+          <script>
+            var options = {
+              key: "rzp_test_aIfnpuWEudWnID", // Enter the Key ID generated from the Dashboard
+              amount: "5000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+              currency: "INR",
+              name: "Tender Heart",
+              description: "Please lend a Helping hand",
+              handler: function (response) {
+                if (
+                  typeof response.razorpay_payment_id == "undefined" ||
+                  response.razorpay_payment_id < 1
+                ) {
+                  swal({
+                    title: "Please try again later!",
+                    icon: "error",
+                    button: "Close",
+                  });
+                } else {
+                  swal({
+                    title: "Thank You!",
+                    icon: "success",
+                    button: "Close",
+                  });
+                }
+              },
+              theme: {
+                color: "#3399cc",
+              },
+            };
+            var rzp1 = new Razorpay(options);
+            document.getElementById("rzp-button1").onclick = function (
+              e
+            ) {
+              rzp1.open();
+              e.preventDefault();
+            };
+          </script>
+      </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h2 style="font-size: 2em;">“If a child can't learn the way we teach, maybe we should teach the way they learn.”</h1>
+        </div>
+      </div>
+      <br><br>
+      <div>
+        <style>
+          .btn {
+            position: relative;
+            display: inline-block;
+            width: 180px;
+            height: 60px;
+            cursor: pointer;
+            background: transparent;
+            border: 0px solid #c9363600;
+            outline: none;
+            transition: 1s ease-in-out;
+            border-radius: 0px !important;
+          }
+          
+          .btn svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            fill: none;
+            stroke: #fff;
+            stroke-dasharray: 150 480;
+            stroke-dashoffset: 150;
+            transition: 1s ease-in-out;
+          }
+          
+          .btn:hover {
+            background: #c80202;
+          }
+          
+          .btn:hover svg {
+            stroke-dashoffset: -480;
+          }
+          
+          .btn span {
+            position: relative;
+            color: white;
+            font-size: 18px;
+            font-weight: 100;
+            z-index: 1;
+          }
+        </style>
+         <br>
+        <button class="btn">
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span>Support Them</span>
+        </button>
+      </div>
+      
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <!-- <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/homebackground.jpg" class="img-fluid" id="tilt" alt="">
+          </div> -->
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img class="mySlides" src="/assets/img/specialneeds/horticulture.jpg" style="width:90%">
+          </div>
+          
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3 style="line-height: 1.5;">To enable <span style="color: #c80202;">special friends</span> in our society to lead meaningful lives by nurturing their <span style="color: #c80202;">scholastic</span> and <span style="color: #c80202;">professional potential</span>.</h3><br><br>
+            <h4 style="line-height: 1.5;">To explore and develop the hidden <span style="color: #c80202;">talents</span> of <span style="color: #c80202;">children</span>, providing opportunities for them to excel in their areas of <span style="color: #c80202;">strength</span>.</h4>            
+          </div>
+        </div>
+        
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Clients Section ======= -->
+    
+      </div>
+      <br><br><br><br>
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Curriculum</h2>
+          <p>The curriculum includes:        </p>
+        </div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+        <ul>
+                      
+            <li><i class=""></i> Literacy and numeracy lessons</li><br>
+            <li><i class=""></i> Sports training by Special Olympics trainer</li><br>
+            <li><i class=""></i> Meditation session - 'Bhajan therapy'</li><br>
+            <li><i class=""></i> Skills development training</li><br>
+            <li><i class=""></i> Computer training</li><br>
+            <li><i class=""></i> Vocational training: creation of chalks, diaries, envelopes and paper bowls and lots more</li><br>
+           <!-- <li><i class=""></i> </li><br>
+            <li><i class=""></i> </li><br> -->
+            
+        </ul>
+</div>
+
+</div>
+<br><br><br><br>
+<div class="container" data-aos="fade-up">
+
+  <div class="section-title">
+    <h2>Success</h2>
+    <p>Our success stories:        </p>
+  </div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+  <ul>
+                
+      <li><i class=""></i> Find out more about Jasir's transformation from a shy boy to a confident Madhubani artist!      </li><br>
+      <li><img src="/assets/img/specialneeds/this-is-jasir-and-his-inspiring-story-page-0001_orig.jpg"></li><br>
+      <!-- <li><i class=""></i> </li><br>
+      <li><i class=""></i> </li><br> -->
+      
+  </ul>
+</div>
+<br><br><br>
+<section id="service" class="services">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>For Tomorrow</h2>
+      <p>Transforming Lives Through Education and Sports</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icon-box">
+          <div class="icon"><img src="/assets/img/stack-of-books_646-430-min.png" style="width: 30px;"></div>
+          <h4><a href="">Education and Support Schemes</a></h4>
+          <p>Tender Heart has successfully instilled the value of <span style="color: #c80202;">education</span> in Bhatola and nearby villages. However, many <span style="color: #c80202;">students</span> still cannot attend school due to extreme <span style="color: #c80202;">poverty</span>. We are actively implementing various <span style="color: #c80202;">support schemes</span> to make education accessible for these children.</p>
+        </div>
+      </div>
+    
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icon-box">
+          <div class="icon"><img src="/assets/img/medal.svg" style="width: 30px;"></div>
+          <h4><a href="">Sports Programs for Development</a></h4>
+          <p>Our <span style="color: #c80202;">intellectually challenged students</span> have shown remarkable progress, demonstrating that <span style="color: #c80202;">sports</span> can be a powerful development tool. Building on this success, we are expanding our sports programs to ensure all children benefit from <span style="color: #c80202;">physical activities</span>.</p>
+        </div>
+      </div>
+    
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+        <div class="icon-box">
+          <div class="icon"><img src="/assets/img/handmade.svg" style="width: 30px;"></div>
+          <h4><a href="">Ambition and Holistic Development</a></h4>
+          <p>The <span style="color: #c80202;">children</span> at Tender Heart are highly ambitious, driven by the belief that education can transform lives and uplift families. Our initiatives support these aspirations by providing <span style="color: #c80202;">educational opportunities</span> and avenues for <span style="color: #c80202;">holistic development</span>, creating a brighter future for the children and communities we serve.</p>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</section>
+<br><br>
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Little Moments</p>
+        </div>
+
+        
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/specialneeds/baking-classes.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Goodwork 1</h4>
+                <p>Description</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/specialneeds/cooking-classes.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Goodwork 2</h4>
+                <p>Description</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/specialneeds/horticulture.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Goodwork 3</h4>
+                <p>Description</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/specialneeds/singing_orig.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Goodwork 4</h4>
+                <p>Description</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/specialneeds/special-olympics_orig.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Goodwork 5</h4>
+                <p>Description</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/specialneeds/world-disability-day_orig.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Goodwork 6</h4>
+                <p>Description</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Goodwork 7</h4>
+                <p>Description</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Goodwork 8</h4>
+                <p>Description</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Goodwork 9</h4>
+                <p>Description</p>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Call To Volunteer</h3>
+          <p> </p>
+          <a class="cta-btn" href="#">Volunteer</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+  
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Check our Other Projects</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Rural Children Education</a></h4>
+              <p>Lets save the environment by recycling the concrete jungle with sustainable environment friendly substances.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Women Empowerment</a></h4>
+              <p>Lets take out some time for them who are lonely. Because, we grow as we give.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Special Needs Education Programme</a></h4>
+              <p>Let's take a step to bring the underprevilaged to the same base and give them an open sky.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Educating Slum Children</a></h4>
+              <p>Nothing works before hunger. Let's work to eradicate it from everywhere.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Health Project</a></h4>
+              <p>The mute angels do love us a lot. So, let's return some love to them.</p>
+            </div>
+          </div>        
+
+          <!-- If you want to add new projects, Just copy past the below and edit -->
+          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">SCool Groups</a></h4>
+              <p>Education should solve problems. We dream to make it efficient and practical.</p>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.1015023805317!2d77.36325517549179!3d28.386002075800274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdcc7e95b8bff%3A0xd3a14b2c8c15fad9!2sTender%20Heart%20NGO%20and%20School!5e0!3m2!1sen!2sin!4v1719499463945!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Village Bhatola, Tigaon Road
+                  Faridabad - 121008
+                  Haryana, India</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@tenderheartngo.org</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91-9718516337</p>
+                <p>+91-9350844393</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer  -->
+  <footer id="footer" style="padding-bottom: 0px !important;">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Tender Heart<span>.</span></h3>
+              <p>
+                Village Bhatola, Tigaon Road<br>
+                Faridabad - 121008<br>
+                Haryana, India <br><br>
+                <strong>Phone:</strong> +91-9350844393<br>
+                <strong>Phone:</strong> +91-9718516337<br>
+                <strong>Email:</strong> info@tenderheartngo.org<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/tenderheartNGO" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/tenderheart_ngo/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/user/tenderheartngo" target="_blank" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="https://in.linkedin.com/in/tender-heart-ngo-17a893187" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right scrollto"></i> <a href="index.html#home">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="gallery.html">Gallery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ourstory.html">Our story</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="donate.html">Donate</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our projects</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="rural.html">Rural Children Education</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="women.html">Women Empowerment</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="specialneeds.html">Special Needs Education Programme</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="teaching.html">Teaching Underprivileged Children</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Health Project</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+<!-- ======= -->
+  </footer><!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
